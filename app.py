@@ -21,7 +21,7 @@ with open('kmeans_model.pkl','rb') as f:
 st.title("K-Means Clustering Visualizer by Seatsiri Dangjanta")
 
 #Load Dataset
-X, _ = make_blobs(n_samples=300, centers=loaded_model.n_cluster, cluster_std=0.60, random_state=0)
+X, _ = make_blobs(n_samples=300, centers=loaded_model.n_clusters, cluster_std=0.60, random_state=0)
 
 #Predict using the loaded model
 y_kmeans = loaded_model.predict(X)
